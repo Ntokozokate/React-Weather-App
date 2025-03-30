@@ -5,7 +5,7 @@ import WeatherApp from "./Components/Weather";
 function App() {
   return (
     <div className="  min-h-screen">
-      <h1>Hello</h1>
+      <h1>My Weather App</h1>
       <div>
         <Circles />
         <WeatherApp />
