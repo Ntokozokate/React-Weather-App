@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./App.css";
 import Circles from "./Components/Circles";
 import Header from "./Components/Header";
@@ -7,15 +9,16 @@ import Description from "./Components/Description";
 import Forecast from "./Components/Forecast";
 
 function App() {
+  const [city, setCity] = useState("Bulawayo");
   return (
     <div className="relative min-h-screen text-gray-700 dark:bg-gray-800">
       <div className="absolute inset-0 z-[-1]">
         <Circles />
       </div>
-      <Header />
+      <Header setCity={setCity} />
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 p-4 ">
         <div className="col-span-1 md:col-span-3 space-y-6">
-          <CurrentWeather />
+          <CurrentWeather city={city} />
           <MoreWeather />
           <Description />
         </div>
