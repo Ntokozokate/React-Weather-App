@@ -29,8 +29,18 @@ function App() {
       <div className="p-5">
         <small>
           Build with ❤️ by{" "}
-          <a href="" className="text-blue-500 hover:text-blue-200">
+          <a
+            href="https://kate-nm-personal-website.netlify.app/"
+            className="text-blue-500 hover:text-blue-200"
+          >
             Ntokozo Kate Moyo
+          </a>
+          and is{" "}
+          <a
+            href="https://github.com/Ntokozokate?tab=repositories"
+            className="text-blue-700 hover:text-blue-200"
+          >
+            Open Sourced on GitHub
           </a>
         </small>{" "}
         <span>
